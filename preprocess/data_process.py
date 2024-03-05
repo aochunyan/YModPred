@@ -30,7 +30,7 @@ def pad_sequence(token_list):
     data = []
     for i in range(len(token_list)):
         token_list[i] = [token2index['[CLS]']] + token_list[i]
-        n_pad = 50 - len(token_list[i])
+        n_pad = 603 - len(token_list[i])
         token_list[i].extend([0] * n_pad)
         data.append(token_list[i])
     return data
